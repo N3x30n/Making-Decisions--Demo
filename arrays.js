@@ -63,3 +63,26 @@ console.log(pokemon)
 backpack.unshift('Lead statue of Jinx')
 console.log('Backpack after adding the statue')
 console.log(backpack)
+
+
+backpack.shift()
+console.log('This is our backpack after getting rid of the statue: ')
+console.log(backpack)
+
+backpack.shift()
+let lunch = pokemon.splice(1,1,'Butterfree')
+
+console.log('This is my backpack and pokemon after catching butterfree:')
+console.log(backpack)
+console.log(pokemon)
+console.log('And here is my lunch')
+console.log(lunch)
+
+for (let i = 0; i < pokemon.length; i++) {
+    if(pokemon[i] === 'Pidgey'){
+        pokemon[i] = "Pidgeotto" 
+    }
+}
+
+console.log("After the evolution even my pokemon are now:")
+console.log(pokemon)
